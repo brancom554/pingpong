@@ -1,6 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier  # Ou LogisticRegression pour probas simples
 from sklearn.metrics import log_loss
-from config import HYPERPARAMS
+from .config import HYPERPARAMS
 
 class PingPongModel:
     def __init__(self):

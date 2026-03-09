@@ -1,5 +1,6 @@
-from trainer import train_model
-from predictor import predict_match
+# main.py (updated)
+from src.trainer import train_model
+from src.predictor import predict_match
 from apscheduler.schedulers.background import BackgroundScheduler  # Pour auto-retrain
 
 def main():

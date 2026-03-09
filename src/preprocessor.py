@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from config import FEATURES, TARGET, PROCESSED_PATH
+from .config import FEATURES, TARGET, PROCESSED_PATH  # Import relatif
 
 def preprocess_data(df):
     """

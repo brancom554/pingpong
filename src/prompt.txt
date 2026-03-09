@@ -1,0 +1,31 @@
+j'ai été consulté par une agence pour développer une app de prediction de pronostics sur les paris sportifs dans le cadre du 
+tennis de table. ils ont déjà les specifications. moi je dois traduire les spec en codes et brancher les apis des datas 
+disponibles afin que le modèle puisse s'affiner. je voudrais une architecture en python pour le modèle(qui va inclure 
+les formules mathématique, l'entrainement automatique grâce aux données, la gestion des prédictions et l'amélioration,...). 
+voici l'architecture du système :
+
+pingpong_predictor/
+├── data/                  # Données brutes et traitées (e.g., CSV from APIs)
+│   ├── raw/               # Données brutes fetchées
+│   └── processed/         # Données prétraitées
+├── models/                # Modèles sauvegardés (e.g., .joblib)
+├── src/                   # Code source principal
+│   ├── __init__.py
+│   ├── config.py          # Configurations (API keys, paths, hyperparameters)
+│   ├── data_loader.py     # Fetch data from APIs
+│   ├── preprocessor.py    # Nettoyage et feature engineering
+│   ├── model.py           # Définition du modèle ML avec formules maths
+│   ├── trainer.py         # Entraînement et retraining automatique
+│   └── predictor.py       # Gestion des prédictions
+├── api/                   # Optionnel : API pour exposer le modèle (e.g., FastAPI)
+│   ├── __init__.py
+│   └── main.py            # Endpoint pour prédictions
+├── tests/                 # Tests unitaires (e.g., pytest)
+│   └── test_model.py
+├── requirements.txt       # Dépendances
+├── main.py                # Script principal pour run tout (train, predict)
+├── README.md              # Docs
+└── .gitignore             # Ignorer data/models sensibles
+
+voici l'algo de la société avec les formules mathématiques et autres : 
+

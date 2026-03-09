@@ -1,10 +1,10 @@
 import joblib
 import pandas as pd
-from preprocessor import preprocess_data
-from model import PingPongModel
-from data_loader import fetch_data
-from data_loader import fetch_all_data  # Changé de fetch_data à fetch_all_data
-from config import PROCESSED_PATH, MODEL_PATH
+from .preprocessor import preprocess_data
+from .model import PingPongModel
+#from .data_loader import fetch_data
+from .data_loader import fetch_all_data  # Changé de fetch_data à fetch_all_data
+from .config import PROCESSED_PATH, MODEL_PATH
 
 def train_model(retrain=False, from_date=None, to_date=None):
     """

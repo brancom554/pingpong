@@ -1,7 +1,7 @@
 # src/data_loader.py
 import requests
 import pandas as pd
-from config import API_URL_MATCHES, API_KEY_MATCHES, API_URL_RANKINGS, API_KEY_RANKINGS, API_URL_ODDS, API_KEY_ODDS, DATA_PATH
+from .config import API_URL_MATCHES, API_KEY_MATCHES, API_URL_RANKINGS, API_KEY_RANKINGS, API_URL_ODDS, API_KEY_ODDS, DATA_PATH
 
 def fetch_from_api(url, params=None, headers=None):
     """Fonction utilitaire pour fetch d'une API."""

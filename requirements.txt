@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+requests
+joblib
+apscheduler  # Pour scheduling retraining
+fastapi      # Optionnel pour API
+uvicorn      # Optionnel pour server API
+pytest  # Pour tests unitaires
